@@ -10,11 +10,11 @@ int main()
 
     int j = 0, fails = 0, pass = 0, not = 0;
 
-    char a[100], b[100], alph[30] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '\0'}, l;
+    char a[100], b[100], alph[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '\0'}, l;
 
     int counter = 7, c = 0;
 
-    printf("Enter the word\n");
+    printf("Enter the sentence:\n");
 
     gets(a);
 
@@ -71,6 +71,8 @@ int main()
         printf("No. of tries left %d\nEnter a letter in lower case:\n", counter);
 
         printf("Letters available:%s\n", alph);
+        
+        fflush(stdin);
 
         scanf(" %c", &l);
 
